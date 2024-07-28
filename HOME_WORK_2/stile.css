@@ -1,0 +1,49 @@
+body{
+    background-color: rgba(250, 235, 215, 0.295);
+}
+
+.headline {
+    color: aqua;
+    text-align: center;
+    font-size: 40Px;
+    font-style: italic;
+}
+.subheader {
+    color: rgb(255, 166, 0);
+    font-size: 22px;
+    font-style: oblique;
+}
+img {
+    height: 400px;
+}
+#panda{
+    border: 2px dashed blue;
+    border-radius: 10% 25%;
+    box-shadow: 10px 5px 5px rgba(0, 255, 234, 0.637);
+    background-color:rgba(169, 169, 169, 0.103);
+}
+.intro {
+    color: chartreuse;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-text {
+    color: cadetblue;
+    font-weight: 500;
+    font-style: oblique;
+}
+.text-more {
+    margin:15px ;
+}
+.idea {
+    color: darkblue;
+    font-size: 20px;
+    font-style:unset;
+}
+.footer-element {
+    border: 60px 800px;
+    background-color: khaki;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
