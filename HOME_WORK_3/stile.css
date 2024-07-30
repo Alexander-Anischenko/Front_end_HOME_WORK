@@ -1,0 +1,9 @@
+p {
+    width: 495px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    background-color:rgba(240, 230, 140, 0.384);
+}
+span {
+    border: 2px solid blue;
+}
