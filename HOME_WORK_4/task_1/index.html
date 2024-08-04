@@ -6,27 +6,74 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <h1>Письмо С_-_е</h1>
+    <form action="greetings.html">
         <div>
-            <h1>Письмо С_-_е</h1>
             <p>Дорогой друг, не стесняйся и раскажи С_-_е о том, кто ты и о том, что ты хочешь получить.</p>
             <div>
                 <label for="">
                     <input type="text" placeholder="Логин" required>
                 </label>
             </div>
+            <br>
             <div>
                 <label for="">
                     <input type="password" placeholder="Пароль" required>
                 </label>
             </div>
+            <br>
             <div>
                 <label for="">
                     <input type="text" placeholder="Имя" required>
                 </label>
             </div>
-            
         </div>
+        
+        <div>
+            <p>Пол:</p>
+            <input type="radio" value="boy" name="gender" id="gender1">
+            <label for="gender1">Мальчик</label>
+            <input type="radio" value="girl" name="gender" id="gender2">
+            <label for="gender2">Девочка</label>
+        </div>
+        <br>
+        <div>
+            <label for="birth-day">День рождения:</label>
+            <input type="date" name="birth-day" id="birth-day">
+        </div>
+        <br>
+        <div>
+            <label for="">Ты живешь в</label>
+            <select name="settlement-type">
+                <option value="village">Деревня</option>
+                <option value="settlement">Поселок</option>
+                <option value="small-town">Малый город</option>
+                <option value="district-Center">Районный центр</option>
+                <option value="oblast-center">Областной центр</option>
+                <option value="regional-center">Региональный центр</option>
+                <option value="national-capital">Столица страны</option>
+            </select>
+        </div>
+        <div>
+            <p>Твое поведение за год:</p>
+            <input type="radio" value="good" name="behaviour" id="behaviour1">
+            <label for="gender1">Хорошее</label>
+            <input type="radio" value="average" name="behaviour" id="behaviour2">
+            <label for="gender2">Среднее</label>
+            <input type="radio" value="bad" name="behaviour" id="behaviour3">
+            <label for="gender2">Плохое</label>
+        </div>
+        <br>
+        <div>
+            <label for="favorite-color">Твой любимый цвет:</label>
+            <input type="color" name="color" id="favorite-color">
+        </div>
+        <br>
+        <div>
+            <button type="submit" a href="greetings.html">Отправить данные</button>
+            <button type="reset">Очистить форму</button>
+        </div>
+        
     </form>
 </body>
 </html>
