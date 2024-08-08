@@ -1,12 +1,13 @@
 main {
-  height: 200vh;
+  height: 200vh;/* две высоты экрана */
 }
 
 
 /* твой код */
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 10px;
   background-color: rgb(102,102,102);
   height: 35px;
   width: 100%;
@@ -22,6 +23,7 @@ a.text-hover {
 }
 .text-hover:hover {
   color:bisque;
+  transition: all 0.1s linear;
 }
 body {
   background-color: antiquewhite;
@@ -30,7 +32,7 @@ body {
 
 @font-face {
   font-family: "NarrowNews"; 
-  src: url("./fonts/ClanOT-NarrowNews.ttf") format("truetype"); 
+  src: url("./fonts/ClanOT-NarrowNews.ttf"); 
   font-style: normal; 
   font-weight: normal; 
   } 
