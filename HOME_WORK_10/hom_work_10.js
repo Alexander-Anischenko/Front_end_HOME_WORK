@@ -1,7 +1,7 @@
 // Создайте массив строк и выведите в консоль его длину, первый и последний элементы массива
 const stringArr = ["Hello", "to", "all", "the", "sane", "people", "of", "the", "world"];
 console.log("Array length=> " + stringArr.length);
-console.log(stringArr[0], stringArr[8]);
+console.log(stringArr[0], stringArr[stringArr.length - 1]);
 
 // Создайте новый массив на основе массива [1, 2, 3, 4, 5, 6], в который будут входить только четные числа из заданного массива
 let numArr = [1, 2, 3, 4, 5, 6];
@@ -29,9 +29,9 @@ for (let i = 0; i < numArr1.length; i++) {
 console.log(numMax);
 
 let numMin = numArr1[0];
-for (let i = 0; i < numArr1.length; i++) {
-    if(numArr1[i] < numMin) {
-        numMax = numArr1[i]
+for (let number of numArr1) {
+    if(number < numMin) {
+        numMin = number
     }
     
 }
