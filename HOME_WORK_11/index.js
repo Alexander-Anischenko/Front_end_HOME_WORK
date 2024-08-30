@@ -42,9 +42,12 @@ console.log(arrNum);
 
 function calcAverage (arr) {
     let averageValue = 0;
-    for (let i = 0; i < arr.length; i++) {
-        averageValue +=arr[i] / arr.length;
+    for (const element of arr) {
+        averageValue += element / arr.length;
     }
+    /* for (let i = 0; i < arr.length; i++) {
+        averageValue +=arr[i] / arr.length;
+    } */
     console.log('Average value: ' + averageValue);
 }
 
