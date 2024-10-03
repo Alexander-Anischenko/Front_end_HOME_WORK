@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("./image/Rocinante\(The\ Expanse\).jpeg");
+    background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.header-style {
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+    padding-right: 30px;
+    color:burlywood;
+    
+    font-size: 30px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-right: 200px;
+    
+}
+
+.starship-data-style-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 2px solid antiquewhite;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(89, 57, 57);
+
+}
+
+.elements-style {
+    padding-left: 15px;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+
+}
+
+.hide-manufacturer {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(108, 246, 193);
+    font-size: 22px;
+    font-weight: 700;
+    color: brown;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+}
