@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 14</title>
+<script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Сalc ideal weight</h1>
+        <div class="card">
+            <form action="" id="form">
+                <div class="elements-container">
+                    <label for="person-height">Height, cm*</label>
+                    <input 
+                    type="number" 
+                    min="140" name="height" 
+                    class="height-input"
+                    id="person-height" 
+                    placeholder="Enter your height" 
+                    required>
+                </div>
+                <div class="elements-container">
+                    <label for="person-gender">Choose a gender*</label>
+                    <select name="gender" id="person-gender" class="gender-select" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button class="result-button">Calculate</button>
+                <div class="result">There will be a result here</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
