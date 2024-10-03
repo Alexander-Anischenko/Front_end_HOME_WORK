@@ -1,0 +1,170 @@
+* {
+    /* Устанавливаем box-sizing для всех элементов, чтобы padding и border включались в общую ширину и высоту */
+    box-sizing: border-box;
+    /* Устанавливаем шрифт Lato для всех элементов */
+    font-family: "Lato", sans-serif;
+}
+
+html, body {
+    /* Устанавливаем высоту на 100%, чтобы страницы занимали всю высоту окна */
+    height: 100%;
+    /* Убираем отступы и поля по умолчанию */
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    /* Убираем отступы и поля для заголовков, параграфов и списков */
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    /* Flexbox: располагаем элементы вертикально (столбцом) */
+    display: flex;
+    flex-direction: column;
+    /* Выравниваем элементы равномерно с равными интервалами */
+    justify-content: space-evenly;
+    gap: 30px; /* Интервал между элементами */
+    min-height: 100%; /* Минимальная высота контейнера — 100% */
+    font-size: 26px; /* Размер шрифта для основного контейнера */
+    background: #112233; /* Цвет фона */
+    padding-left: 150px; /* Внутренний отступ слева */
+    padding-right: 150px; /* Внутренний отступ справа */
+}
+
+.header {
+    /* Flexbox: выравниваем заголовок по центру */
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline center; /* Выравнивание по базовой линии для заголовков */
+    margin: 10px;
+}
+
+h1 {
+    /* Цвет текста белый */
+    color: #FFFFFF;
+    /* Полужирный шрифт */
+    font-weight: 700;
+    /* Размер шрифта */
+    font-size: 40px;
+}
+
+#main {
+    /* Flexbox: располагаем основное содержимое (форму и результат) горизонтально */
+    display: flex;
+    width: 100%; /* Ширина на 100% */
+    justify-content: space-between; /* Выравниваем содержимое по ширине */
+    gap: 20px; /* Интервал между формой и результатом */
+    margin-bottom: 100px;
+}
+
+.form-employee-data {
+    /* Flexbox: вертикальная ориентация, выравнивание содержимого по центру */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Интервал между полями формы */
+    background-color: #FFFFFF; /* Белый фон формы */
+    max-width: 590px; /* Ширина формы максимальная */
+    min-width: 510px;/* Ширина формы минимальная */
+    height: 592px; /* Высота формы */
+    padding: 60px; /* Внутренний отступ */
+    border-radius: 4px; /* Закругленные углы */
+}
+
+.form-employee-input {
+    /* Flexbox: вертикальная ориентация для поля ввода */
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Интервал между лейблом и полем ввода */
+    color: #6F6F6F; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+}
+
+.employee-input {
+    /* Размеры и стили для поля ввода */
+    width: 470px;
+    height: 50px;
+    border-radius: 4px; /* Закругленные углы */
+    padding: 12px; /* Внутренние отступы */
+    border: 1px solid #3F3F3F; /* Обводка */
+}
+
+.employee-input::placeholder {
+    /* Цвет для текста placeholder */
+    color: #9F9F9F;
+}
+
+.botton-wrap {
+    /* Внутренний отступ сверху для кнопки */
+    padding-top: 10px;
+}
+
+.main-button {
+    /* Размеры и стили для кнопки "Create" */
+    width: 470px;
+    height: 70px;
+    border-radius: 4px; /* Закругленные углы */
+    border: none; /* Убираем обводку */
+    background-color: #1F27F5; /* Синий фон */
+    font-weight: 600; /* Полужирный шрифт */
+    font-size: 20px; /* Размер шрифта */
+    color: #FFFFFF; /* Белый текст */
+    cursor: pointer; /* Указатель мыши при наведении */
+}
+
+.style-result {
+    /* Flexbox: вертикальная ориентация для результатов */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px; /* Внутренние отступы */
+    gap: 30px; /* Интервал между результатами */
+    max-width: 456px; /* Ширина блока с результатами максимальная */
+    min-width: 400px;/* Ширина блока с результатами минимальная */
+    height: 470px; /* Высота блока с результатами */
+    border-radius: 4px; /* Закругленные углы */
+    background-color: #FFFFFF; /* Белый фон */
+}
+
+.output-field {
+    /* Flexbox: вертикальная ориентация для вывода каждого поля результата */
+    display: flex;
+    flex-direction: column;
+    width: 336px; /* Ширина полей */
+    height: 65px; /* Высота полей */
+    gap: 8px; /* Интервал между меткой и результатом */
+}
+
+.output-labels {
+    /* Стили для лейблов в блоке результатов */
+    font-size: 16px;
+    color: #6F6F6F;
+}
+
+.results-output {
+    /* Стили для текста, который выводится в блоке результатов */
+    width: 336px;
+    height: 36px;
+    font-size: 28px;
+    font-weight: 700; /* Жирный шрифт */
+    color: #1C1C1C; /* Тёмный цвет текста */
+}
+
+.hide {
+    /* Класс для скрытия элемента */
+    opacity: 0; /* Элемент становится невидимым */
+    transition: opacity 0.3s ease; /* Плавная анимация исчезновения */
+}
+

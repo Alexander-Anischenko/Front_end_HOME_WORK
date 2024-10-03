@@ -1,0 +1,149 @@
+* {
+
+    box-sizing: border-box;
+    font-family:"Lato", sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    min-height: 100%;
+    font-size: 26px;
+    background:#112233;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items:baseline center;
+    width: 1150px;
+    
+}
+
+h1 {
+
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    gap: 50px;
+}
+
+.form-employee-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #FFFFFF;
+    width: 590px;
+    height: 592px;
+    padding: 60px;
+    border-radius: 4px;
+}
+
+.form-employee-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #6F6F6F;
+    font-size: 16px;
+}
+
+    
+.employee-input {
+    width: 470px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #3F3F3F;
+}
+
+.employee-input::placeholder {
+    color: #9F9F9F;
+}
+.botton-wrap {
+    padding-top: 10px;
+}
+
+.main-button {
+    width: 470px;
+    height: 70px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1F27F5;
+    font-weight: 600;
+    font-size:20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.style-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 456px;
+    height: 470px;
+    background-color: #FFFFFF;
+    padding: 60px;
+    gap: 30px;
+    border-radius: 4px;
+    
+}
+
+.output-field{
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height: 65px;
+    gap: 8px;
+    
+}
+
+.output-labels{
+    font-size: 16px;
+    color: #6F6F6F;
+}
+
+.results-output{
+    width: 336px;
+    height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1C1C1C;
+}
+
+.hide{
+    opacity: 0;
+}
+

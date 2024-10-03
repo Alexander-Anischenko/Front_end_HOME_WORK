@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="./index.js" defer></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="main-container"><!-- поменять название на root -->
+        <!-- Основной контейнер страницы -->
+        
+        <div class="header"> 
+            <!-- Блок заголовка страницы -->
+            <h1>Create Employee</h1> <!-- Заголовок страницы -->
+        </div>
+        
+        <main id="main">
+            <!-- Основная секция с формой и выводом результата -->
+            
+            <!-- Форма для ввода данных о сотруднике -->
+            <form id="form-employee" class="form-employee-data">
+                
+                <!-- Поле для ввода имени сотрудника -->
+                <div class="form-employee-input">
+                    <label for="employeeName">Name*</label> <!-- Метка для поля ввода имени -->
+                    <input class="employee-input" name="name" placeholder="Enter employee Name" id="employee-name">
+                    <!-- Поле для ввода имени с подсказкой -->
+                </div>
+                
+                <!-- Поле для ввода фамилии сотрудника -->
+                <div class="form-employee-input">
+                    <label for="employeeSurname">Surname*</label> <!-- Метка для поля ввода фамилии -->
+                    <input class="employee-input" name="surname" placeholder="Enter employee Surname" id="employee-surname">
+                    <!-- Поле для ввода фамилии с подсказкой -->
+                </div>
+                
+                <!-- Поле для ввода возраста сотрудника -->
+                <div class="form-employee-input">
+                    <label for="employeeAge">Age*</label> <!-- Метка для поля ввода возраста -->
+                    <input type="number" min="16" max="120" class="employee-input" name="age" placeholder="Enter employee Age" id="employee-age">
+                    <!-- Поле для ввода возраста с ограничением диапазона от 16 до 120 лет -->
+                </div>
+                
+                <!-- Поле для ввода должности сотрудника -->
+                <div class="form-employee-input">
+                    <label for="employeeJobPosition">Job Position</label> <!-- Метка для поля ввода должности -->
+                    <input class="employee-input" name="job_position" placeholder="Enter employee Position" id="employee-job-position">
+                    <!-- Поле для ввода должности с подсказкой -->
+                </div>
+                
+                <!-- Обёртка для кнопки создания сотрудника -->
+                <div class="button-wrap">
+                    <button type="submit" class="main-button" id="create-button">Create</button>
+                    <!-- Кнопка для отправки формы и создания сотрудника -->
+                </div>
+                
+            </form>
+            
+            <!-- Блок для вывода результатов формы (скрыт по умолчанию с помощью класса hide) -->
+            <div id="form-result" class="style-result hide">
+                
+                <!-- Поле для вывода имени сотрудника -->
+                <div class="output-field">
+                    <p class="output-labels">Name</p> <!-- Метка "Name" для поля результата -->
+                    <p class="results-output" id="employee-name-output"></p>
+                    <!-- Здесь будет отображаться введенное имя сотрудника -->
+                </div>
+                
+                <!-- Поле для вывода фамилии сотрудника -->
+                <div class="output-field">
+                    <p class="output-labels">Surname</p> <!-- Метка "Surname" для поля результата -->
+                    <p class="results-output" id="employee-surname-output"></p>
+                    <!-- Здесь будет отображаться введенная фамилия сотрудника -->
+                </div>
+                
+                <!-- Поле для вывода возраста сотрудника -->
+                <div class="output-field">
+                    <p class="output-labels">Age</p> <!-- Метка "Age" для поля результата -->
+                    <p class="results-output" id="employee-age-output"></p>
+                    <!-- Здесь будет отображаться введенный возраст сотрудника -->
+                </div>
+                
+                <!-- Поле для вывода должности сотрудника -->
+                <div class="output-field">
+                    <p class="output-labels">Job Position</p> <!-- Метка "Job Position" для поля результата -->
+                    <p class="results-output" id="employee-position-output"></p>
+                    <!-- Здесь будет отображаться введенная должность сотрудника -->
+                </div>
+                
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>
