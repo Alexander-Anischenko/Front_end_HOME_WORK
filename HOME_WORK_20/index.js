@@ -4,8 +4,6 @@ const resultArea = document.querySelector("#get-results");
 const spinGo = document.querySelector("#spinner-div");
 const APP_ID = "baa52af8a07d22355fac54528cab1d8a";
 
-
-
 const getWeatherResult = async() => {
 
     const kelvinToCelsius = (kelvin) => {
@@ -14,9 +12,7 @@ const getWeatherResult = async() => {
 
     resultArea.innerHTML = '';
     
-    /* const APP_ID = "baa52af8a07d22355fac54528cab1d8a"; */
     const city = cityNameEntry.city.value.trim();
-    //console.log(city);
     if(! city) {alert(` Please entry city name`);
     } else { 
         try{ 
@@ -27,7 +23,6 @@ const getWeatherResult = async() => {
         );
         const weatherData = await response.json();
         
-        console.log(weatherData);
             if(response.ok) {
                 cityNameEntry.reset();
                 spinGo.classList.add("hiden");
@@ -53,7 +48,7 @@ const getWeatherResult = async() => {
         } catch(error) {
             resultArea.classList.add("error");
             spinGo.classList.add("hiden");
-            console.log(error.responseError);
+            
             resultArea.innerHTML = `
                 <div>${error}</div>
                 <div>Cod: ${error.responseError.cod}</div>
@@ -61,7 +56,6 @@ const getWeatherResult = async() => {
             `
         }
         finally{spinGo.classList.add("hiden")}
-        
     }
 }
 //setInterval(getWeatherResult, 50)
