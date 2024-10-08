@@ -83,6 +83,13 @@ button {
 button:hover {
     background-color:rgba(13, 155, 160, 0.693);
 }
+
+button:disabled {
+    background-color: #7d7d80;
+    color: rgb(166, 163, 163);
+    cursor: pointer;
+}
+
 .hiden{
     display: none;
 }

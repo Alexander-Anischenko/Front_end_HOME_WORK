@@ -18,6 +18,8 @@ const getWeatherResult = async() => {
         try{ 
             resultArea.classList.remove("error");
             spinGo.classList.remove("hiden");
+            weatherRequestButton.setAttribute('disabled', '');
+
         const response = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APP_ID}`,
         );
@@ -55,7 +57,10 @@ const getWeatherResult = async() => {
                 <div>${error.responseError.message}</div>
             `
         }
-        finally{spinGo.classList.add("hiden")}
+        finally{
+            spinGo.classList.add("hiden")
+            weatherRequestButton.removeAttribute('disabled', '');
+        }
     }
 }
 //setInterval(getWeatherResult, 50)
